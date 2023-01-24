@@ -1,0 +1,73 @@
+/* Basic CSS Stylesheet Template */
+
+/* Standard reset for body + main */
+body, main, footer, h1, h2, h3, {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
+/* CSS */
+body {
+  width: 1000px;
+  text-align: center;
+  background: radial-gradient(black,rgb(0, 150, 150),rgb(0, 0, 100))
+}
+
+article {
+  background-image: url(images/thumbnail-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: top;
+  width: 70%;
+  margin: 0% 10% 2% 10%;
+}
+
+section {
+border-width: 3px 3px 3px 30px;
+border-color: green;
+border-style: solid;
+background-color: rgb(254, 255, 237);
+padding: 5px 5px 5px 15px;
+}
+
+section a {
+  font-weight: bolder;
+}
+
+header {
+  font-size: 12px;
+  border-width: 1px 20px 1px 0;
+  border-color: black;
+  border-style: solid;
+  text-align: center;
+  text-transform: uppercase;
+  font-variant: small-caps;
+  width: 85%;
+  }
+
+  header span {
+      font-size: 20px;
+  }
+
+  footer {
+    margin:auto;
+    text-align: left;
+    padding: 2em;
+}
+
+footer a{
+  color: white;
+}
+
