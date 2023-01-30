@@ -5,69 +5,193 @@ body, main, footer, h1, h2, h3, {
   margin: 0;
   padding: 0;
   border: 0;
-  
-}
-
-ul {
-  display: block;
-  list-style-type: disc;
-  margin-top: 1em;
-  margin-bottom: 1 em;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 40px;
 }
 
 /* CSS */
+/* https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap&effect=neon */
+@font-face {
+  font-family: SourceCodePro;
+  src: url(fonts/Source_Code_Pro/static/SourceCodePro-Regular.ttf);
+}
 body {
-  width: 1000px;
+  width: 100%;
+  margin: auto;
   text-align: center;
-  background: radial-gradient(black,rgb(0, 150, 150),rgb(0, 0, 100))
+  background: radial-gradient(rgb(117, 117, 117),rgb(58, 58, 58),rgb(231, 231, 231));
 }
-
-article {
-  background-image: url(images/thumbnail-2.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position-y: top;
-  width: 70%;
-  margin: 0% 10% 2% 10%;
+main {
+  width: 75%;
+  margin-left: 12.5%;
 }
-
-section {
-border-width: 3px 3px 3px 30px;
-border-color: green;
-border-style: solid;
-background-color: rgb(254, 255, 237);
-padding: 5px 5px 5px 15px;
+h1, h2, h3, h4 {
+  font-family: SourceCodePro;
 }
-
-section a {
-  font-weight: bolder;
+p {
+  font-family: SourceCodePro, serif;
+  font-size: 24px;
+  color: black;
 }
-
 header {
   font-size: 12px;
-  border-width: 1px 20px 1px 0;
-  border-color: black;
-  border-style: solid;
+  border-width: 20px 20px 20px 20px;
+  border-color: rgb(128, 128, 128);
+  border-style:ridge;
   text-align: center;
   text-transform: uppercase;
   font-variant: small-caps;
   width: 85%;
+  margin-bottom: 2.5%;
   }
 
-  header span {
-      font-size: 20px;
+  .font-effect-3d-float{
+    font-size: 72px;
   }
+header h1 {
+  font-size: 48px;
+  border-width: 2px 12px 2px 12px;
+  border-color: black;
+  border-style: solid;
+  text-shadow: 2px 2px 4px white;
+}
+header h2 {
+  font-size: 24px;
+  border-width: 1px 6px 1px 6px;
+  border-color: black;
+  border-style: solid;
+  text-shadow: 1px 1px 2px white;
+}
 
-  footer {
+section a {
+  color: grey;
+  font-family: SourceCodePro;
+}
+
+section a:visited{
+  color: rgb(185, 185, 185);
+}
+
+section a:hover{
+  color: white;
+  background-color: black;
+}
+/* Section Classes */
+.aboutMe {
+border-width: 10px 10px 5px 10px;
+border-color: rgb(102, 102, 102);
+  border-style: outset;
+background-color: rgb(61, 61, 61);
+padding: 5px 5px 5px 15px;
+margin-left: 35%;
+}
+
+.aboutMe:hover
+    {
+      border-style: inset;
+    }
+
+.portfolio {
+  border-width: 5px 10px 5px 10px;
+  border-color: rgb(102, 102, 102);
+  border-style: outset;
+  background-color: rgb(61, 61, 61);
+  padding: 5px 5px 5px 15px;
+  margin-right: 35%;
+  }
+  .portfolio:hover
+    {
+      border-style: inset;
+    }
+
+
+.familyBicycle {
+  border-width: 5px 10px 5px 10px;
+  border-color: rgb(102, 102, 102);
+  border-style: outset;
+  background-color: rgb(61, 61, 61);
+  padding: 5px 5px 5px 15px;
+  margin-left: 35%;
+  }
+  .familyBicycle:hover
+    {
+      border-style: inset;
+    }
+
+
+.education {
+  border-width: 5px 10px 5px 10px;
+  border-color: rgb(102, 102, 102);
+  border-style: outset;
+  background-color: rgb(61, 61, 61);
+  padding: 5px 5px 5px 15px;
+  margin-right: 35%;
+  }
+  .education:hover
+    {
+      border-style: inset;
+    }
+
+
+ .languages {
+    border-width: 5px 10px 5px 10px;
+    border-color: rgb(102, 102, 102);
+    border-style: outset;
+    background-color: rgb(61, 61, 61);
+    padding: 5px 5px 5px 15px;
+    margin-left: 35%;
+    }
+.languages:hover
+    {
+      border-style: inset;
+    }
+.left:hover{
+  background-color:rgb(206, 0, 178);
+}
+.right:hover{
+  background-color: rgb(0, 255, 255)
+}
+.code {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 35%;
+  margin-right: 0;
+  padding-left: 40px;
+}
+li {
+ text-align: left;
+ font-family: SourceCodePro;
+}
+.left {
+  margin-left: 25%;
+}
+.right {
+  margin-right: 25%;
+}
+
+
+.footerList {
+  font-size: 2em;
+}
+
+.fa {
+  width: 0px;
+  margin-left: 25%;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+
+}
+footer {
     margin:auto;
     text-align: left;
     padding: 2em;
-}
 
+}
 footer a{
-  color: white;
+  color: rgb(231,231,231);
 }
 
+footer a:hover {
+  color:rgb(58, 58, 58);
+}
