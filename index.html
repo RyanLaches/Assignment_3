@@ -5,14 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap&effect=3d-float">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .font-effect-neon {
+        text-shadow: 0 0 0.1em rgb(125, 125, 125), 0 0 0.5em rgb(61, 61, 61),  0 0 0.2em #fff, 
+        0 0 0.2em #fff, 0 0 2.5em rgb(61, 61, 61), 
+        0 0 0.4em #fff,  2.0em 0 1.0em rgb(61, 61, 61), 
+        0 0 1.5em  rgb(61, 61, 61);
+        color: rgb(231,231,231);
+      }
+    </style>
     <title>Laches Web Solutions</title>
   </head>
   <body>
     <main>
       <!-- ***********************  ABOUT / PROFILE  *********************** -->
       <header>
-        <h1>Ryan Laches</h1>
-        <h2>Full-Stack Web Development Studio</h2>
+        <h1 class="font-effect-neon">Ryan Laches</h1>
+        <h2 class="font-effect-neon">Junior Full-Stack Web Developer</h2>
+      </header>
 
       <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
       <section class="aboutMe">
@@ -38,8 +50,12 @@
 
         <section class="familyBicycle">
           <h3>Family Bicycle</h3>
-          <img src="project-thumbnail.png" alt="description of image">
+        
           <p>Family Bicycle is a local family-owned bicycle shop that I designed and hand-coded. </p>
+          <p>This one of my first projects in school, and it is elementary at best but demonstrates 
+            what I was capable of after just one semester of class at Wake Tech.
+          </p>
+          <img class="familyBicycle_image" src="css/images/family_bicycle.png"><br><br>
           <a href="https://wcet.waketech.edu/rjlaches/WEB140/Final_Project/Family_Bicycle/homepage.html" target="_blank">Family Bicycle Homepage</a>
         </section>
         <!-- End of Project block. -->
