@@ -168,6 +168,7 @@ margin-left: 35%;
 li {
  text-align: left;
  font-family: SourceCodePro;
+
 }
 .left {
   margin-left: 25%;
@@ -201,4 +202,115 @@ footer a{
 
 footer a:hover {
   color:rgb(58, 58, 58);
+}
+
+
+/* NAVIGATION */
+
+nav {
+  padding: 0 0 8em 2em;
+  width: -25%; 
+ 
+}
+
+nav a {
+  text-decoration: none;
+  margin-top: 0.5em;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  font-family: Helvetica, Arial, sans-serif;
+
+  position: relative;
+}
+
+ul li li {
+  text-align: right;
+  font-size: 14px;
+  padding: 0.25em, 0.25em, 0.25em, 0em;
+
+}
+
+.top-nav > li {
+  float: left;
+  width: 20%;
+  font-size: 16px;
+}
+
+ul li a:hover  {
+  color:rgb(102, 102, 102);
+}
+
+
+
+.top-nav > li > li > a {
+  color: #fcfcfc;
+  font-weight: bold;
+  background: linear-gradient(#616161, transparent);
+  line-height: 2.5em;
+  padding: 0, 1.25em;
+  display: block;
+}
+
+.drop-down1 {
+  background: rgba(128, 128, 128, 0.186);
+  width: 10em;
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+  margin-left: 5%;
+}
+
+.drop-down2 {
+  background: rgba(128, 128, 128, 0.197);
+  width: 12em;
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+  margin-left: 25%;
+}
+
+
+li:hover .drop-down1 {
+  visibility: visible;
+}
+
+li:hover .drop-down2 {
+  visibility: visible;
+}
+
+
+.nav-column {
+  float: left;
+  padding: 2.5%;
+  width: 20%;
+}
+
+.nav-column h3 {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin: 1em 0em 0.5em 0em;
+}
+
+.nav-column a {
+  font-weight: bold;
+  line-height: 1.75;
+  color: #888;
+
+}
+
+.nav-column a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.top-nav > li > a {
+  color: #fcfcfc;
+  font-weight: bold;
+  background: linear-gradient(#333, transparent);
+  line-height: 2.5em;
+  padding: 0, 1.25em;
+  display: block;
+  text-align: center;
 }
